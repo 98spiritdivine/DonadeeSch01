@@ -24,7 +24,7 @@ app.use('/css', express.static(__dirname + 'public/css'))
 
 app.set('views', './views');
 app.set('view engine', 'ejs');
-app.get('/Homepage', (req, res) => {
+app.get('/', (req, res) => {
     res.render('Homepage')
 })
 
